@@ -6,7 +6,13 @@ namespace Guess8YouWin
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Guess a number between 1 and 10:");
+            string userGuess = Console.ReadLine();
+
+            string winLose = (userGuess == "8") ? "WIN" : "LOSE";
+
+            Console.WriteLine("You " + winLose + "!");
+            Console.ReadLine();
         }
     }
 }
